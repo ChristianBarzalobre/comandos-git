@@ -1,0 +1,73 @@
+\documentclass{report}
+
+\usepackage[spanish]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[left=2.50cm, right=2.50cm]{geometry}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+
+\author{Nombre}
+
+\title{Portada siempre practica}
+
+\begin{document}	
+\lstset{language=bash}  
+\textbf{Comandos Git} \\
+
+\begin{tabular}{| c | c |}
+\hline
+Propósito & Comando\\ \hline
+
+Instalación & 
+\begin{lstlisting}
+pacman -S git
+\end{lstlisting}\\ \hline
+
+Comprobar instalación & 
+\begin{lstlisting}
+git --version
+\end{lstlisting}\\ \hline
+
+
+Registrar nombre de usuario  & 
+\begin{lstlisting}
+git config --global user.name "Nombre de usuario deseado" 
+\end{lstlisting}\\ \hline
+
+Registrar tu correo electrónico &
+\begin{lstlisting}
+git config --global user.email tucorreo@electronico.com
+\end{lstlisting}\\ \hline
+
+Carpeta a iniciar el git &
+\begin{lstlisting}
+git init
+\end{lstlisting}\\ \hline
+
+Status del git &
+\begin{lstlisting}
+git status
+\end{lstlisting}\\ \hline
+
+
+\end{tabular} 
+
+
+
+\end{document}
