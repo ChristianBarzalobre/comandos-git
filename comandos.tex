@@ -124,6 +124,27 @@ Eliminar versiones anteriores sin ser tan agresivo &
 git reset #codigo --soft
 \end{lstlisting}\\ \hline
 
+Ver ramas &
+\begin{lstlisting}
+git branch
+\end{lstlisting}\\ \hline
+
+Crear una nueva rama &
+\begin{lstlisting}
+git branch nombredelarama
+\end{lstlisting}\\ \hline
+
+Cambiar de rama &
+\begin{lstlisting}
+git checkout nombredelarama
+\end{lstlisting}\\ \hline
+
+\begin{tabular}{@{}l@{}}
+Trasladar cambios de una rama a otra \\ primero posicionarse en la rama donde \\ se trasladaran los cambios, \\luego trasladar los cambios
+\end{tabular}  &
+\begin{lstlisting}
+git checkout nombredelarama , git merge
+\end{lstlisting}\\ \hline
 
 \end{tabular}
 \end{center}
