@@ -14,6 +14,7 @@
 \usepackage{float}
 \usepackage{cite}
 \usepackage{url}
+
 \usepackage{xcolor}
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,
@@ -30,7 +31,10 @@
 \lstset{language=bash}  
 \textbf{Comandos Git} \\
 
-\begin{tabular}{| c | c |}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{| l | l |}
+
 \hline
 Propósito & Comando\\ \hline
 
@@ -65,9 +69,25 @@ Status del git &
 git status
 \end{lstlisting}\\ \hline
 
+Agregar archivo al rastreo de git &
+\begin{lstlisting}
+git add ejemplo.cpp
+\end{lstlisting}\\ \hline
 
-\end{tabular} 
+Añadir una version al repositorio &
+\begin{lstlisting}
+git commit -m "comentario sobre la version"
+\end{lstlisting}\\ \hline
+
+Ver historial de versiones &
+\begin{lstlisting}
+git log --oneline
+\end{lstlisting}\\ \hline
 
 
 
+\end{tabular}
+\end{center}
+\end{table}
+ 
 \end{document}
