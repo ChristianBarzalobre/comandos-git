@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[landscape]{article}
 
 \usepackage[spanish]{babel}
 %\usepackage[T1]{fontenc}
@@ -23,11 +23,16 @@
   keywordstyle=\color{blue}
 }
 
+
+
 \author{Nombre}
 
-\title{Portada siempre practica}
+%\title{Portada siempre practica}
+
 
 \begin{document}	
+
+
 \lstset{language=bash}  
 \textbf{Comandos Git} \\
 
@@ -84,10 +89,29 @@ Ver historial de versiones &
 git log --oneline
 \end{lstlisting}\\ \hline
 
+Regresar version especifica &
+\begin{lstlisting}
+git checkout #codigo
+\end{lstlisting}\\ \hline
+
+Regresar a la ultima version &
+\begin{lstlisting}
+git checkout master
+\end{lstlisting}\\ \hline
+
+Informacion detallada de las versiones &
+\begin{lstlisting}
+git log
+\end{lstlisting}\\ \hline
+
+Muestra los cambios realizados entre versiones &
+\begin{lstlisting}
+git show
+\end{lstlisting}\\ \hline
 
 
 \end{tabular}
 \end{center}
 \end{table}
- 
+
 \end{document}
