@@ -212,6 +212,44 @@ Listar archivos contenidos en el git &
 git ls-files
 \end{lstlisting}\\ \hline
 
+Archivo .gitignore &
+\begin{lstlisting}
+nano .gitignore , git rm -r --cached . 
+, git add . , git commit -m "comentario"
+\end{lstlisting}\\ \hline
+
+Ver tags &
+\begin{lstlisting}
+git tag
+\end{lstlisting}\\ \hline
+
+Crear tag &
+\begin{lstlisting}
+git tag -a nombretag -m "comentario" 49a7816 
+\end{lstlisting}\\ \hline
+
+Datos del tag &
+\begin{lstlisting}
+git show-ref --tags
+\end{lstlisting}\\ \hline
+
+Eliminar tag &
+\begin{lstlisting}
+git tag -d nombretag
+\end{lstlisting}\\ \hline
+
+Enviar tag repositorio &
+\begin{lstlisting}
+git push origin --tags
+\end{lstlisting}\\ \hline
+
+Eliminar tag de repositorio &
+\begin{lstlisting}
+git push origin :refs/tags/nombretag
+\end{lstlisting}\\ \hline
+
+
+
 \end{tabular}
 \end{center}
 \end{table}
